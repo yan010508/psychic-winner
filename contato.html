@@ -1,0 +1,271 @@
+<html><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Econex - Contato</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Orbitron:wght@400;700&display=swap');
+
+  :root {
+    --primary-color: #2ecc71;
+    --secondary-color: #27ae60;
+    --text-color: #e0e0e0;
+    --bg-color: #1a1a1a;
+    --dark-bg-color: #121212;
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  header {
+    background: linear-gradient(135deg, var(--dark-bg-color), #1e3a8a);
+    color: white;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+  
+  nav {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: var(--primary-color);
+  }
+  
+  main {
+    padding-top: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 2rem 2rem;
+  }
+  
+  .contact-hero {
+    text-align: center;
+    padding: 4rem 0;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1587560699334-cc4ff634909a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+  }
+  
+  .contact-hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+  
+  .contact-form {
+    flex: 1;
+    padding-right: 2rem;
+  }
+  
+  .contact-info {
+    flex: 1;
+    padding-left: 2rem;
+    border-left: 1px solid var(--text-color);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+  }
+  
+  input, textarea {
+    padding: 0.5rem;
+    border: 1px solid var(--text-color);
+    background-color: var(--dark-bg-color);
+    color: var(--text-color);
+    border-radius: 4px;
+  }
+  
+  button {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  .contact-method {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-icon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: var(--primary-color);
+  }
+  
+  footer {
+    background-color: var(--dark-bg-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 4rem;
+  }
+  
+  @media (max-width: 768px) {
+    .header-content {
+      flex-direction: column;
+      align-items: center;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    main {
+      padding-top: 120px;
+    }
+    .contact-content {
+      flex-direction: column;
+    }
+    .contact-form, .contact-info {
+      padding: 0;
+      border-left: none;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo">Econex</div>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="tecnologia.html">Tecnologia</a>
+        <a href="impacto.html">Impacto</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    <section class="contact-hero">
+      <h1>Entre em Contato</h1>
+      <p>Estamos ansiosos para ouvir de você e discutir como podemos trabalhar juntos por um futuro mais sustentável.</p>
+    </section>
+    
+    <section class="contact-content">
+      <div class="contact-form">
+        <h2>Envie-nos uma mensagem</h2>
+        <form id="contact-form">
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="subject">Assunto</label>
+          <input type="text" id="subject" name="subject" required>
+          
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          
+          <button type="submit">Enviar Mensagem</button>
+        </form>
+      </div>
+      
+      <div class="contact-info">
+        <h2>Informações de Contato</h2>
+        <div class="contact-method">
+          <span class="contact-icon">📍</span>
+          <p>Rua da Inovação, 123 - Arapongas, PR</p>
+        </div>
+        <div class="contact-method">
+          <span class="contact-icon">📞</span>
+          <p>+55 (11) 1234-5678</p>
+        </div>
+        <div class="contact-method">
+          <span class="contact-icon">✉️</span>
+          <p>contato@econex.eco</p>
+        </div>
+        <div class="contact-method">
+          <span class="contact-icon">🕒</span>
+          <p>Segunda a Sexta: 9h - 18h</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p> Econex. Todos os direitos reservados. Inovando para um futuro sustentável.</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.getElementById('contact-form');
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        // Aqui você pode adicionar a lógica para enviar o formulário
+        // Por exemplo, usando fetch para enviar os dados para um servidor
+        console.log('Formulário enviado!');
+        alert('Obrigado por entrar em contato! Responderemos em breve.');
+        form.reset();
+      });
+    });
+  </script>
+</body></html>

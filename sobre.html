@@ -1,0 +1,259 @@
+<html><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre a Econex - Transformando CO2 em Energia Sustentável</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Orbitron:wght@400;700&display=swap');
+
+  :root {
+    --primary-color: #2ecc71;
+    --secondary-color: #27ae60;
+    --text-color: #e0e0e0;
+    --bg-color: #1a1a1a;
+    --dark-bg-color: #121212;
+  }
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  header {
+    background: linear-gradient(135deg, var(--dark-bg-color), #1e3a8a);
+    color: white;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  .header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--primary-color), 0 0 20px var(--primary-color);
+    }
+    to {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px var(--primary-color), 0 0 40px var(--primary-color);
+    }
+  }
+  nav {
+    display: flex;
+    gap: 1.5rem;
+  }
+  nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+  }
+  nav a:hover {
+    color: var(--primary-color);
+    transform: translateY(-2px);
+  }
+  main {
+    max-width: 1200px;
+    margin: 6rem auto 2rem;
+    padding: 2rem;
+  }
+  .about-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+  .about-content {
+    flex: 1;
+    min-width: 300px;
+  }
+  .about-image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+  }
+  .about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+  h1, h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    margin-bottom: 1.5rem;
+  }
+  .mission-vision {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+  .mission, .vision {
+    flex: 1;
+    background-color: rgba(255,255,255,0.05);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  .mission:hover, .vision:hover {
+    transform: translateY(-5px);
+  }
+  .team {
+    text-align: center;
+  }
+  .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .team-member {
+    flex-basis: calc(33% - 2rem);
+    background-color: rgba(255,255,255,0.05);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  .team-member:hover {
+    transform: translateY(-5px);
+  }
+  .team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  footer {
+    background-color: var(--dark-bg-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 4rem;
+  }
+  @media (max-width: 768px) {
+    .header-content {
+      flex-direction: column;
+      align-items: center;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    .about-section, .mission-vision {
+      flex-direction: column;
+    }
+    .team-member {
+      flex-basis: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo">Econex</div>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="tecnologia.html">Tecnologia</a>
+        <a href="impacto.html">Impacto</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    <section class="about-section">
+      <div class="about-content">
+        <h1>Sobre a Econex</h1>
+        <p>A Econex é uma startup inovadora dedicada a criar soluções sustentáveis para o desafio global das mudanças climáticas. Nossa missão é transformar CO2 em energia limpa e renovável, focando em soluções modulares e acessíveis para pequenas empresas e propriedades rurais.</p>
+        <p>Fundada em 2021 por um grupo de engenheiros e ambientalistas apaixonados, a Econex nasceu da visão de democratizar o acesso à tecnologia de captura de carbono. Acreditamos que cada negócio, independentemente de seu tamanho, pode desempenhar um papel crucial na luta contra as mudanças climáticas.</p>
+      </div>
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Equipe Econex trabalhando em laboratório sustentável" width="600" height="400">
+      </div>
+    </section>
+
+    <section class="mission-vision">
+      <div class="mission">
+        <h2>Nossa Missão</h2>
+        <p>Fornecer soluções modulares e acessíveis de captura de carbono para pequenas empresas e propriedades rurais. Democratizamos o acesso à tecnologia de captura de CO2, permitindo que negócios menores reduzam suas emissões de forma eficiente. Nosso objetivo é empoderar comunidades locais a liderarem a transição para um futuro sustentável.</p>
+      </div>
+      <div class="vision">
+        <h2>Nossa Visão</h2>
+        <p>Imaginamos um mundo onde cada empresa, independentemente de seu tamanho, possa contribuir significativamente para a redução das emissões de carbono. Através da inovação contínua e da acessibilidade, aspiramos criar uma rede global de captura de carbono que transforme o desafio climático em oportunidade para um futuro mais limpo e próspero.</p>
+      </div>
+    </section>
+
+    <section class="team">
+      <h2>Nossa Equipe</h2>
+      <p>A força da Econex reside em nossa equipe diversificada e apaixonada. Conheça alguns dos rostos por trás de nossa inovação:</p>
+      <div class="team-members">
+        <div class="team-member">
+          <img src="IMG_7635.JPG" alt="Retrato de Maria Silva, CEO" width="150" height="150">
+          <h3>Yan Luis inácio da silva 13 hahaha</h3>
+          <p>tava na equipe</p>
+        </div>
+        <div class="team-member">
+          <img src="IMG_7997.jpg" alt="Retrato de João Santos, CTO" width="150" height="150">
+          <h3>Victor Reis</h3>
+          <p>fez o site e ajudou a fazer os slides</p>
+        </div>
+        <div class="team-member">
+          <img src="IMG_8571.jpg" alt="Retrato de Ana Ferreira, Cientista Chefe" width="150" height="150">
+          <h3>Ana Julia</h3>
+          <p>fez os slides e ajudou a fazer o site</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>© 2023 Econex. Todos os direitos reservados. Juntos por um futuro mais verde.</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Animação de entrada para os elementos da página
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate');
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.about-section, .mission, .vision, .team-member').forEach(el => {
+        observer.observe(el);
+      });
+    });
+  </script>
+</body></html>

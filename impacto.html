@@ -1,0 +1,329 @@
+<html><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Impacto Global Econex - Democratizando a Captura de Carbono</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Orbitron:wght@400;700&display=swap');
+
+  :root {
+    --primary-color: #2ecc71;
+    --secondary-color: #27ae60;
+    --text-color: #e0e0e0;
+    --bg-color: #1a1a1a;
+    --dark-bg-color: #121212;
+  }
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  header {
+    background: linear-gradient(135deg, var(--dark-bg-color), #1e3a8a);
+    color: white;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  .header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--primary-color), 0 0 20px var(--primary-color);
+    }
+    to {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px var(--primary-color), 0 0 40px var(--primary-color);
+    }
+  }
+  nav {
+    display: flex;
+    gap: 1.5rem;
+  }
+  nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+  }
+  nav a:hover {
+    color: var(--primary-color);
+    transform: translateY(-2px);
+  }
+  main {
+    max-width: 1200px;
+    margin: 6rem auto 2rem;
+    padding: 2rem;
+  }
+  .impact-intro {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  h1, h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    margin-bottom: 1.5rem;
+  }
+  .impact-sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+  .impact-section {
+    background-color: rgba(255,255,255,0.05);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  .impact-section:hover {
+    transform: translateY(-5px);
+  }
+  .impact-section h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+  }
+  .impact-stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+  }
+  .stat {
+    text-align: center;
+    margin: 1rem;
+  }
+  .stat-number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+  .stat-label {
+    font-size: 1rem;
+    color: var(--text-color);
+  }
+  .impact-map {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  .impact-map svg {
+    max-width: 100%;
+    height: auto;
+  }
+  .testimonials {
+    background-color: rgba(255,255,255,0.05);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 4rem;
+  }
+  .testimonial {
+    margin-bottom: 2rem;
+    padding-left: 20px;
+    border-left: 3px solid var(--primary-color);
+  }
+  .testimonial-author {
+    font-style: italic;
+    color: var(--secondary-color);
+  }
+  .cta {
+    text-align: center;
+    margin-top: 4rem;
+  }
+  .cta-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--dark-bg-color);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  .cta-button:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+  }
+  footer {
+    background-color: var(--dark-bg-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 4rem;
+  }
+  @media (max-width: 768px) {
+    .header-content {
+      flex-direction: column;
+      align-items: center;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    .impact-sections {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo">Econex</div>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="tecnologia.html">Tecnologia</a>
+        <a href="impacto.html">Impacto</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    <section class="impact-intro">
+      <h1>Nosso Impacto Global</h1>
+      <p>Na Econex, estamos comprometidos em criar uma mudança positiva e duradoura para o nosso planeta. Nossa abordagem inovadora para a captura de carbono e geração de energia sustentável está transformando comunidades e empresas ao redor do mundo.</p>
+    </section>
+
+    <section class="impact-sections">
+      <div class="impact-section">
+        <h3>Rede Descentralizada</h3>
+        <p>Criamos uma rede global descentralizada de captura de carbono, envolvendo pequenas empresas e propriedades rurais. Isso permite uma abordagem mais ampla e inclusiva na luta contra as mudanças climáticas.</p>
+      </div>
+      <div class="impact-section">
+        <h3>Democratização da Tecnologia</h3>
+        <p>Nossas soluções acessíveis democratizam o acesso à tecnologia de captura de CO2, permitindo que negócios menores reduzam suas emissões de forma eficiente e contribuam para um futuro mais sustentável.</p>
+      </div>
+      <div class="impact-section">
+        <h3>Empoderamento Local</h3>
+        <p>Capacitamos comunidades locais a liderarem a transição para um futuro sustentável, criando oportunidades econômicas e promovendo a autonomia energética.</p>
+      </div>
+    </section>
+
+    <section class="impact-stats">
+      <div class="stat">
+        <div class="stat-number" id="co2-captured">0</div>
+        <div class="stat-label">Toneladas de CO2 Capturadas</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number" id="energy-generated">0</div>
+        <div class="stat-label">MWh de Energia Limpa Gerada</div>
+      </div>
+ 
+    </section>
+
+    <section class="impact-map">
+      <h2>Para onde queremos expandir nosso negócio</h2>
+      <svg width="800" height="400" viewBox="0 0 800 400">
+        <rect width="800" height="400" fill="#1a1a1a"/>
+        <path d="M120,160 Q400,90 680,160 T400,240 T120,320" fill="none" stroke="#2ecc71" stroke-width="2"/>
+        <circle cx="200" cy="180" r="5" fill="#2ecc71"/>
+        <circle cx="350" cy="150" r="5" fill="#2ecc71"/>
+        <circle cx="500" cy="200" r="5" fill="#2ecc71"/>
+        <circle cx="650" cy="170" r="5" fill="#2ecc71"/>
+        <text x="200" y="200" fill="#e0e0e0" font-size="12" text-anchor="middle">América</text>
+        <text x="350" y="170" fill="#e0e0e0" font-size="12" text-anchor="middle">Europa</text>
+        <text x="500" y="220" fill="#e0e0e0" font-size="12" text-anchor="middle">Ásia</text>
+        <text x="650" y="190" fill="#e0e0e0" font-size="12" text-anchor="middle">Oceania</text>
+      </svg>
+    </section>
+
+    <section class="testimonials">
+      <h2>Avalie nosso projeto e conte sua esperiência</h2>
+      <h4>Coloque seu depoimento:</h4>
+
+  
+    </section>
+
+    <section class="cta">
+      <h2>Faça Parte da Mudança</h2>
+      <p>Junte-se a nós na missão de criar um futuro mais sustentável e equitativo para todos.</p>
+      <a href="/contato" class="cta-button">Torne-se um Parceiro</a>
+    </section>
+  </main>
+  
+  <footer>
+    <p> Econex. Todos os direitos reservados. Construindo um futuro sustentável, uma comunidade de cada vez.</p>
+  </footer>
+
+  <script>
+    function animateNumber(elementId, finalNumber, duration) {
+      let startTime = null;
+      const element = document.getElementById(elementId);
+      
+      function animation(currentTime) {
+        if (!startTime) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const progress = Math.min(timeElapsed / duration, 1);
+        const currentNumber = Math.floor(progress * finalNumber);
+        
+        element.textContent = currentNumber.toLocaleString();
+        
+        if (progress < 1) {
+          requestAnimationFrame(animation);
+        }
+      }
+      
+      requestAnimationFrame(animation);
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateNumber('co2-captured', 500000, 2000);
+          animateNumber('energy-generated', 1000000, 2000);
+          
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    observer.observe(document.querySelector('.impact-stats'));
+
+    document.querySelectorAll('.impact-section, .testimonial').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transition = 'opacity 0.5s ease-in-out, transform 0.5s ease-in-out';
+      el.style.transform = 'translateY(20px)';
+    });
+
+    const fadeInObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.impact-section, .testimonial').forEach(el => {
+      fadeInObserver.observe(el);
+    });
+  </script>
+</body></html>
